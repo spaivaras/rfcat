@@ -831,7 +831,7 @@ int appHandleEP5()
                     offset = buf[4];
                     offset += buf[5] << 8;
                     txTotal= 0;
-                    buf[0] = transmit(&buf[6], len, 0, offset);
+                    buf[0] = transmit(&buf[6], len, repeat, offset);
                     appReturn( 1, buf);
                     break;
 
